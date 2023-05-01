@@ -1,0 +1,2 @@
+#!/bin/sh
+cat bitmoji.json | jq '.outfits|[.female][]|.brands[]|.outfits[]|[.image, .description]' -c | ruby -ne 'puts $_.sub /(?<=\/)\d+_\d+-s\d(?=-v)/, %w[125551439_18-s5].sample' |ruby -rjson -ne 'url, *tags = JSON.parse($_); puts "<div class=\"friends\"><img src=\"#{url}&width=300\" /><ul>#{tags.map {|t| "<li>#{t}</li>"}.join}</ul></div>"; BEGIN { puts "<style> body * { margin: 0; padding: 0; display: inline-block; } li { display: block; } .friends { width: 300px; } </style>" }'  > female_outfits.html
