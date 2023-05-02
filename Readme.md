@@ -9,4 +9,4 @@
 
 ### Friend poses
 * [Brent first](https://brentmaxwell.github.io/bitmoji/friends1.html)
-* [Kristi first](https://brentmaxwell.github.io/bitmoji/friends1.html)
+* [Kristi first](https://brentmaxwell.github.io/bitmoji/friends2.html)
